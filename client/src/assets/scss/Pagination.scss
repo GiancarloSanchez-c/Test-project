@@ -1,0 +1,41 @@
+
+$backgroundPagination: #f5e4d1;
+$colorText: #8a8a8a;
+$backgroundHover: #fcbb15ef;
+
+.pagination {
+  margin: 10px 0;
+  ul {
+    list-style: none;
+    text-align: center;
+    cursor: pointer;
+    li {
+      display: inline-block;
+    }
+  }
+  
+}
+
+.number {
+  display: block;
+  padding: 10px 18px;
+  color: $colorText;
+  font-weight: 500;
+  background-color: $backgroundPagination;
+  text-decoration: none;
+  margin: 0 5px;
+  border-radius: 50%;
+  &:hover {
+    background: $backgroundHover;
+  }
+  &:target {
+    background: #98df9d;
+
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .pagination {
+    margin: 0px 50px 0px 0px;
+  }
+}

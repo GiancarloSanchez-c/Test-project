@@ -1,0 +1,134 @@
+$white: #fff;
+$backgroundCreate: #d6e8c6;
+
+.content {
+  background-color: #3c373e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+ height: 150vh;
+
+}
+h2 {
+  font-size: 20px;
+  color: $white;
+}
+
+.content-ul {
+  display: flex;
+  list-style: none;
+  li {
+    margin-left: 1.25rem /* 20px */;
+    margin-right: 1.25rem /* 20px */;
+    margin-bottom: 50px;
+
+    a {
+      color: $white;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: bold;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.custom-table {
+  min-width: 1200px;
+  thead {
+    tr,
+    th {
+      padding-bottom: 30px;
+      border-top: none;
+      border-bottom: none !important;
+      color: $white;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.2rem;
+      padding: 20px;
+    }
+  }
+  tbody {
+    tr,
+    td {
+      width: 25%;
+      color: #777;
+      font-weight: 400;
+      padding-bottom: 20px;
+      padding-top: 20px;
+      font-weight: 300;
+      border: none;
+      text-align: center;
+      transition: 0.3s all ease;
+      small {
+        color: rgba($white, 0.3);
+        font-weight: 300;
+      }
+      a {
+        color: rgba($white, 0.3);
+        text-decoration: none;
+      }
+      .more {
+        color: rgba($white, 0.3);
+        font-size: 11px;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+      }
+    }
+   
+    tr {
+      transition: 0.3s all ease;
+      &:hover,
+      &:focus {
+        td {
+          color: #777;
+          cursor: pointer;
+          a {
+            color: #fdd114;
+          }
+          .more {
+            color: #fdd114;
+          }
+        }
+      }
+    }
+  }
+  .td-box-wrap {
+    padding: 0;
+  }
+  .box {
+    background: $white;
+    border-radius: 4px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    td,
+    th {
+      border: none !important;
+    }
+  }
+}
+
+.filter-select {
+  display: flex;
+  justify-content: space-around;
+  .selected {
+    width: 15%;
+    background-color: $backgroundCreate;
+    text-align: center;
+    font-size: 0.9rem;
+    border: transparent;
+    color: #000;
+    height: 40px;
+    border-radius: 200px;
+    cursor: pointer;
+    animation: moveInBottom 3s ease-out;
+    animation-fill-mode: backwards;
+    margin-bottom: 100px;
+  }
+  
+}
